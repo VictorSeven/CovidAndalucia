@@ -55,3 +55,6 @@ def create_provinces_csv(input_txt_path="../data/aux_updated_series.txt", output
 
     #Export it
     df.to_csv(output_csv_path)
+
+
+create_provinces_csv()

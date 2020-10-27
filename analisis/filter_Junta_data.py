@@ -19,8 +19,9 @@ def create_provinces_csv(input_txt_path="../data/aux_updated_series.txt", output
     end_date_str = [int(f) for f in end_date_str]
     end_date = date(end_date_str[2], end_date_str[1], end_date_str[0])
 
-    numdays = (end_date - init_date).days + 1 #+1 so last one is also included
+    numdays = (end_date - init_date).days #+1 so last one is also included
 
+    #print(end_date, init_date, numdays)
 
 
     #Now let's construct the CSV in good format
